@@ -1,10 +1,5 @@
 #!/bin/bash
 sudo apt update -y
-sudo upgrade -y
-sudo apt install -y curl vim jq git make
-sudo curl -sL get.docker.com | sh
-sudo usermod -aG docker ubuntu
-sudo apt update -y
 sudo apt upgrade -y
 curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
 echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
